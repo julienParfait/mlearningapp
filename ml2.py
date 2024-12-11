@@ -13,7 +13,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-from xgboost import XGBRegressor
+#from xgboost import XGBRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
 
@@ -24,8 +24,8 @@ MODELS_WITH_PARAMS = {
     "Lasso Regression": (Lasso(), {"model__alpha": [0.1, 1.0, 10]}),
     "Elastic Net": (ElasticNet(), {"model__alpha": [0.1, 1.0, 10], "model__l1_ratio": [0.2, 0.5, 0.8]}),
     "Random Forest": (RandomForestRegressor(), {"model__n_estimators": [100, 200], "model__max_depth": [5, 10]}),
-    "Gradient Boosting": (GradientBoostingRegressor(), {"model__n_estimators": [100, 200], "model__learning_rate": [0.01, 0.1]}),
-    "XGBoost": (XGBRegressor(), {"model__n_estimators": [100, 200], "model__learning_rate": [0.01, 0.1]}),
+    "Gradient Boosting": (GradientBoostingRegressor(), {"model__n_estimators": [100, 200], "model__learning_rate": [0.01, 0.1]})
+    #"XGBoost": (XGBRegressor(), {"model__n_estimators": [100, 200], "model__learning_rate": [0.01, 0.1]}),
 }
 
 
