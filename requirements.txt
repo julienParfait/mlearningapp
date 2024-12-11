@@ -1,10 +1,9 @@
-streamlit 
 pandas 
 numpy 
 seaborn
 matplotlib
 plotly
-sklearn
+scikit-learn
 xgboost 
 scipy
 joblib
